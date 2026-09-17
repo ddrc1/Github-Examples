@@ -1,0 +1,14 @@
+name: Commands
+
+on: [push]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: message group
+        run: |
+          echo "::group::My Message Group"
+          echo "Message 1"
+          echo "Message 2"
+          echo "::endgroup::My Message Group"
