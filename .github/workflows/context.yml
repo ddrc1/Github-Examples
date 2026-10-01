@@ -9,4 +9,5 @@ jobs:
       - name: my-context
         env:
           MY_ACTION: ${{github.action}}
-        run: echo "Hello $MY_ACTION"
+          MY_ACTOR: ${{github.actor}}
+        run: echo "Hello $MY_ACTION by $MY_ACTOR"
