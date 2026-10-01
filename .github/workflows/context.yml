@@ -2,7 +2,7 @@ name: Context
 
 on: [push]
 
-jubs:
+jobs:
   my-context:
     runs-on: ubuntu-latest
     steps:
