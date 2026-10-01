@@ -1,0 +1,12 @@
+name: Context
+
+on: [push]
+
+jubs:
+  my-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-context
+        env:
+          MY_ACTION: ${{github.action}}
+        run: echo "Hello $MY_ACTION"
