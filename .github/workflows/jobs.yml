@@ -1,0 +1,8 @@
+name: jobs
+
+jobs:
+  my-job1:
+  my-job2:
+    needs: my-job1
+  my-job3:
+    needs: my-job2
